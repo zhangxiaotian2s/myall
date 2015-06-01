@@ -1,0 +1,6 @@
+*{ margin: 0; padding: 0;}
+li{ list-style: none;}
+a{text-decoration:none}
+
+body{ background: #b8b8b8;}
+.main_box{ width: 1000px; height: 536px; margin: 50px auto;}

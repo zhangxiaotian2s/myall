@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			@import url("css/action.css");
+		</style>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/touch.js"></script>
+	</head>
+
+	<body class="isPC">
+		<div id="wrap" class="relative">
+		<div id="loading" class="absolute">
+				<div class="load_box">
+					<div class="loading_div blur"></div>
+					<img src="images/loading.gif">
+				</div>
+	     	</div>
+	     	
+			<div class="page page_1 pagenow " style="background-image:url(images/gxzy_img01.jpg)">
+				<div class="pagenr  relative">
+					<img src="images/logo.png" class="p100 absolute left-fade-in  duration500  delay500 timing-ease-in fill-mode-forwards opacity0" style=" left:0%; top: 5%;">
+					<img src="images/zhaosheng.png" class="absolute right-fade-in duration500 delay1000  timing-ease-in fill-mode-forwards  opacity0" style="width: 70%; right: 0%; top: 28%;" />
+					<img src="images/renqun.png" class="absolute p100 bottom-fade-in duration1000 delay1500  timing-ease  fill-mode-forwards opacity0" style="bottom: 0%; left: 0%;">
+				
+				</div>
+			</div>
+			<div class="page page_2  hide" style="background-image:url(images/gxzy_img02.jpg)">
+				<div class="pagenr   relative">
+				    
+				</div>
+			</div>
+			<div class="page page_3 hide" style="background-color: #18D0F7;">
+				<div class="pagenr   relative">
+					
+					<p class="absolute page03_p min-fade-in delay1500  duration500 fill-mode-forwards opacity0"> 艺术教育是什么：它是一个潜移默化的过程，也是一个储存能量的过程，它的目的是什么？不是功利的，它是在 培养孩子的修养、审美、品行、素质，让孩子慢慢学会欣赏生活的美好，生命的可贵，感知世界的多彩，从而丰富他们的生命，成就他们的人生。
+					</p>
+				
+
+				</div>
+			</div>
+			<div class="page page_4 hide " style="background-image:url(images/gxzy_img04.jpg)">
+				<div class="pagenr   relative">
+					
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="btn_next" class="Loop_scale absolute">
+				<img src="images/gxzy_btn_top.png" class="block p100">
+			</a>
+		</div>
+		<script type="text/javascript" src="js/page.js"></script>
+		<script>
+			$.fn.PageTab()
+//	     	$.fn.GroupImg()
+		</script>
+	</body>
+
+</html>

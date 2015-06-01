@@ -1,0 +1,115 @@
+*{ margin: 0;padding: 0; font-family: "微软雅黑" verdana;}
+li{ list-style: none;}
+a{text-decoration: none;}
+
+.block{display: block;}
+.clear{clear: both;}
+.hide{ display: none;}
+.show{display: block;}
+.over{ overflow: hidden;}
+.p100{width: 100%;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.blank10{ clear: both; height: 10px;overflow:hidden;}
+.blank20{ clear: both; height: 20px;overflow:hidden;}
+.blank30{ clear: both; height: 30px;overflow:hidden;}
+.m_auto{ margin: 0 auto;}
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+.blur {   
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);   
+            filter: blur(5px);   
+}
+.touch_div{ position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;}
+#loading{ width: 100%; height: 100%; z-index: 1000000000000000;}
+.load_box{ width: 100%; height: 100%; position: relative; background: #c1c1c1; opacity: .8;}
+.loading_div{ width: 100%; height: 100%;}
+.load_box img{ position: absolute; display: block; width: 8%; top: 40%; left: 46%; }
+.module{ background-repeat: no-repeat; background-position: top center; background-size:cover ;  overflow: hidden;}
+#wrap{width: 100%; height: 100%;}
+.modulenr{  max-width: 720px; margin: auto;}
+.module01{}
+.module02{}
+.module03{}
+.tit_h1{ font-size: 36px; top: 20%; left: 20%;}
+.my_des{ font-size: 20px; text-align: center; font-weight:bold ; color: #000; height: 60px; line-height: 60px; width: 100%;  background:url(../images/qxdw_13.png);
+opacity: 0;-webkit-opacity: 0;
+}
+.my_des span{ font-size: 24px;}
+.module01 .my_des{ bottom: 0%;}
+.module02 .my_des{ top: 50%;}
+.module03 .my_des{ top: 50%;}
+.module04 .my_des{ top: 40%;}
+.module05 .title_img{width: 80%;}
+.module05 .head_box{ width:34%; }
+.module05 .imghead{ width: 70%; height: 70%; border-radius :50%;  overflow: hidden; top: 15%; left: 15%;}
+.module05 .imghead div{ width: 100%; height: 100%; overflow: hidden; border-radius: 50%;}
+.module05 .mes{width: 100%; overflow: hidden; }
+.module05 .mes p{ position: absolute;  top: 0px; left: 15%; width:70%;margin: auto;  font-size: 30px;}
+.module05 .mes p strong{ font-size: 40px;} 
+.module05 .mes01 p{ padding-right: 30%; line-height: 102px;  }
+.zydwimg{ width:40%; margin-left:30%;}
+#down_btn{ display: block; width: 70%; text-align: center; height: 40px; background: #e16a57; line-height: 40px; color: #FFFFFF; margin-left:15%;
+ font-size: 16px;  border-radius:6px ; z-index: 1000;
+}
+
+@media only screen  and (min-width: 480px) and (max-width: 720px)  {
+.my_des{ font-size: 30px;}
+.my_des span{ font-size: 40px;}
+.module05 .title_img{width:660px;}
+.module05 .head_box{ width:266px;}
+.module05 .mes p{  font-size: 18px; left: 15%; width:70%;}
+.module05 .mes p strong{ font-size: 24px;} 
+}
+@media only screen and  (max-width: 480px) {
+.module05 .mes p{  font-size: 14px;  left: 15%; width:70%;}
+.module05 .mes p strong{ font-size: 18px;}
+	
+}
+.modulenr{ width:100%; height: 100%;}
+
+#btn_next{
+	display: block;
+	 background: #000000; opacity: 0.7;
+	 width: 50px; height: 30px; line-height: 30px; text-align: center;
+	 left:45%; bottom:0px;
+	 z-index: 10000000; 
+	 color: #FFFFFF;
+}
+#btn_pre{
+	display: block;
+	 width: 50px; height: 50px; background:#FFF;
+	 left: 0px; top: 250px; 
+	  z-index: 10000000; 
+}
+
+
+.up_show1{
+	-webkit-animation: up_show1_ac 0.5s linear forwards;
+	animation: up_show1_ac 0.5s linear forwards;
+}
+.left-fade-in{
+	-webkit-animation: left-fade-in-ac 1.2s linear forwards;
+	animation: left-fade-in-ac 1.2s linear forwards;
+}
+.right-fade-in{
+	-webkit-animation: right-fade-in-ac 1.2s linear forwards;
+	animation: right-fade-in-ac 1.2s linear forwards;
+}
+.top-fade-in{
+	-webkit-animation: top-fade-in-ac 1.2s linear forwards;
+	animation: top-fade-in-ac 1.2s linear forwards;
+}
+.bottom-fade-in{
+	-webkit-animation: bottom-fade-in-ac 1.2s linear forwards;
+	animation: bottom-fade-in-ac 1.2s linear forwards;
+}
+.min-fade-in{
+	-webkit-animation: min-fade-in-ac 1.2s linear forwards;
+	animation: min-fade-in-ac 1.2s linear forwards;
+}
+
+
+

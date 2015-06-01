@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/touch.js"></script>
+		<style>
+			.touchdiv{ overflow: hidden;}
+		</style>
+	</head>
+
+	<body>
+		<div class="touchdiv">
+			<div class="touchbox" style="padding: 100px;">
+				0
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="touchdiv">
+			<div class="touchbox" style="padding: 100px;">
+				1
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="touchdiv">
+			<div class="touchbox" style="padding: 100px;">
+				2
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="touchdiv">
+			<div class="touchbox" style="padding: 100px;">
+				3
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script>
+			touch.on('.touchbox', 'tap', function() {
+				console.log($(this).index('.touchbox'))
+			})
+		</script>
+	</body>
+
+</html>

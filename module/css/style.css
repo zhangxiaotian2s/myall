@@ -1,0 +1,107 @@
+
+*{ margin: 0;padding: 0; font-family: "微软雅黑" verdana;}
+li{ list-style: none;}
+a{text-decoration: none;}
+.block{display: block;}
+.clear{clear: both;}
+.hide{ display: none;}
+.addhide{ display: none;}
+.show{display: block;}
+.over{ overflow: hidden;}
+.p100{width: 100%;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.blank10{ clear: both; height: 10px;overflow:hidden;}
+.blank20{ clear: both; height: 20px;overflow:hidden;}
+.blank30{ clear: both; height: 30px;overflow:hidden;}
+.m_auto{ margin: 0 auto;}
+.text-left{ text-align: left;}
+.text-center{ text-align: center;}
+.text-right{ text-align: right;}
+
+.blur {   
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);   
+            filter: blur(5px);   
+}
+.touch_div{ position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;}
+#loading{ width: 100%; height: 100%; z-index: 1000000000000000;}
+.load_box{ width: 100%; height: 100%; position: relative; background: #c1c1c1; opacity: .8;}
+.loading_div{ width: 100%; height: 100%;}
+.load_box img{ position: absolute; display: block; width: 8%; top: 40%; left: 46%; }
+#wrap{width: 100%; height: 100%;  clear:both;}
+.page{background-size:cover; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background-repeat:no-repeat; background-position: top center;  overflow: hidden;}
+.pagenr{  max-width: 720px; height: 100%; margin: auto;}
+.tit_h1{ font-size: 36px; top: 20%; left: 20%;}
+.my_des{ font-size: 20px; text-align: center; font-weight:bold ; color: #000; height: 60px; line-height: 60px; width: 100%;  background:url(../images/gxzy_13.png);
+opacity: 0;-webkit-opacity: 0;-moz-opacity: 0;
+}
+.my_des span{ font-size: 24px;}
+.page01 .my_des{ bottom: 0%;}
+.page02 .my_des{ top: 50%;}
+.page03 .my_des{ top: 50%;}
+.page04 .my_des{ top: 40%;}
+.page05 .title_img{width: 80%;}
+.page05 .head_box{ width:34%; }
+.page05 .imghead{ width: 70%; height: 70%; border-radius :50%;  overflow: hidden; top: 15%; left: 15%;}
+.page05 .imghead div{ width: 100%; height: 100%; overflow: hidden; border-radius: 50%;}
+.page05 .mes{width: 100%; overflow: hidden; }
+.page05 .mes p{ position: absolute;  top: 0px; left: 15%; width:70%;margin: auto;  line-height: 102px; font-size: 30px;}
+.page05 .mes p strong{ font-size: 40px;} 
+.page05 .mes01 p{ padding-right: 30%; line-height: 102px;  }
+.zydwimg{ width:40%; margin-left:30%;}
+#down_btn{ display: block; width: 70%; text-align: center; height: 40px; background: #e16a57; line-height: 40px; color: #FFFFFF; margin-left:15%;
+ font-size: 16px;  border-radius:6px ; z-index: 1000;
+}
+
+#btn_next{
+	display: block;
+	 width: 10%; line-height: 30px; text-align: center;
+	 left:45%;
+	 bottom:0px;
+	 z-index: 10000000; 
+	 color: #FFFFFF;
+}
+#btn_pre{
+	display: block;
+	 width: 50px; height: 50px; background:#FFF;
+	 left: 0px; top: 250px; 
+	  z-index: 10000000; 
+}
+
+/*横屏浮层css--start*/
+#landscape{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background: #18d0f7;z-index: 1000000000; text-align: center; display: none;}
+#landscape p { font-size: 2.2em; width: 100%; height: 100%; margin-top: 20%; color: #fabd3c; text-align: center;}
+@media screen and (orientation:landscape) {
+ #landscape{ display: block;}
+}
+/*横屏浮层css--end*/
+.isPC{background:url(../images/iPhone5BK.png) no-repeat center top; clear: both;}
+.isPC #wrap{ width: 260px; height: 414px;  margin: 100px auto; overflow: hidden; }
+
+/*
+ *group img style 
+ */
+.groupbtn { width: 50px; height: 50px; border-radius: 50%; overflow: hidden;}
+.groupbtn img{ width: 50px; height: 50px; border-radius: 50%; }
+#group_img1{ left:  10%; bottom: 0px;}
+#group_img2{ left:  32%;  bottom: 0px;}
+#group_img3{ right: 32%; bottom: 0px;}
+#group_img4{ right: 10%; bottom: 0px;}
+
+#Group_div{  width: 100%; height: 100%; left: 0;top: 0;  background: url(../images/bkhei70.png); }
+#Group_box{ width: 100%; height: 100%;}
+#Group_box img{  bottom: 10%; left:5%; width: 90%; border: #000 solid 2px; border-radius: 2px; box-shadow: 0px 0px 20px #000; }
+
+.page02_h1{ width: 100%; font-size: 24px; color: #f8f400; text-align: center; top: 8%; text-shadow: 1px 1px 1px #000;
+ -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+} 
+.page02_h2{ width: 40%; left: 4%;}
+.h2_kcnr{ top: 65%;}
+.kcnr_p{ top: 72%; font-size: 16px; width: 90%; left: 4%; line-height: 26px; padding: 1%; }
+.h2_jsfg{top: 38%;}
+.jsfg_p{top: 44%; font-size: 16px; width: 90%; left: 4%; line-height: 26px; padding: 1%; }
+.btn_img{ width: 33.333%; display: block;}
+
+.page03_p{ font-size: 12px; padding: 2%; line-height: 20px; text-indent: 24px; color: #FFFFFF;}

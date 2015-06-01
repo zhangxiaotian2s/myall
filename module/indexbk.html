@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel="stylesheet" href="css/style2.css?12221" />
+		<link rel="stylesheet" href="css/action.css?22333" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/touch.js"></script>
+	</head>
+
+	<body>
+
+		<div class="wrap relative" id="wrap">
+			<div id="nr" class="absolute" style="width: 100%;">
+				<div class="module module01   p100 blur" style="background-image:url(images/img01.png)">
+					<div class="modulenr   relative">
+						<p class="my_des absolute bottom-fade-in " id="my_des1">我是来自北京的<span>赵奕欢</span>
+						</p>
+						<div class="touch_div"></div>
+					</div>
+				</div>
+				<div class="module module02  p100" style="background-image:url(images/img02.png)">
+					<div class="modulenr   relative">
+						<p class="my_des absolute" id="my_des2">我有<span>性感迷人</span>的身材</p>
+						<div class="touch_div"></div>
+					</div>
+				</div>
+				<div class="module module03  p100" style="background-image:url(images/img03.png)">
+					<div class="modulenr   relative">
+						<p class="my_des absolute" id="my_des3">大家看我<span>诱惑</span>吗？</p>
+						<div class="touch_div"></div>
+					</div>
+				</div>
+				<div class="module module04  p100" style="background-image:url(images/img04.png)">
+					<div class="modulenr   relative">
+						<p class="my_des absolute " id="my_des4">我的身材 <span>98、22、11</span>自己想吧</p>
+						<div class="touch_div"></div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="module module05 absolute p100" style="background-image:url(images/qxdw_bkcontent.png)">
+				<div class="modulenr   relative">
+					<img src="images/qxdw_01.png" class="block title_img m_auto">
+					<div class="blank10"></div>
+					<div class="head_box relative m_auto">-->
+			<!--第一个图片用作的是背景第二个时头像-->
+			<!--	<img src="images/qxdw_09.png" class="block p100 ">
+						<div class="imghead absolute">
+							<div>
+								<img src="images/img04.png" class="p100">
+							</div>
+						</div>
+					</div>
+					<div class="mes mes01 m_auto relative">
+						<img src="images/qxdw_02.png" class="block p100">
+						<p class="text-right">我的名字叫<strong>张璇</strong>
+						</p>
+					</div>
+					<div class="mes mes02 m_auto relative">
+						<img src="images/qxdw_03.png" class="block p100">
+						<p class="text-left">我时来自北京的<strong>天上人间</strong>
+						</p>
+					</div>
+					<div class="mes mes03 m_auto relative">
+						<img src="images/qxdw_04.png" class="block p100">
+						<p class="text-right">我时改变世界的<strong>产品经理</strong>
+						</p>
+					</div>
+					<div class="mes mes04 m_auto relative">
+						<img src="images/qxdw_05.png" class="block p100">
+						<p class="text-left">我有一双<strong>会放电的</strong>眼睛
+						</p>
+					</div>
+					<div class="clear"></div>
+					<div class="blank10"></div>
+					<img src="images/qxdw_06.png" class="block zydwimg ">
+					<div class="blank10"></div>
+					<div class="touch_div" style="height: 1000;"></div>
+					<a href="javascript:void(0)" id="down_btn" class="absolute">
+						下载天际好好约领红包
+					</a>
+
+				</div>
+			</div>-->
+			<div id="loading" class="absolute">
+				<div class="load_box">
+					<div class="loading_div blur"></div>
+					<img src="images/loading.gif">
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="btn_pre" class="absolute">next</a>
+			<a href="javascript:void(0)" id="btn_next" class="absolute">next</a>
+		</div>
+		<script type="text/javascript" src="js/module2.js"></script>
+		<script>
+			$.fn.mymodule({}, [
+				[
+					["#my_des1"],
+					["bottom-fade-in"]
+				],
+				[
+					["#my_des2"],
+					["top-fade-in"]
+				],
+				[
+					["#my_des3"],
+					["min-fade-in"]
+				],
+				[
+					["#my_des4"],
+					["right-fade-in"]
+				],
+				[
+					[""],
+					[""]
+				]
+			])
+		</script>
+	</body>
+
+</html>
