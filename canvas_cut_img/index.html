@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/touch.js"></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="file" id="selectimg" />
+		<input type="button" />
+		<canvas id="canvas" width="" height="" style="background: #000000; width: 100%; ">
+
+		</canvas>
+		<script>
+			var w = $(window).width()
+			var h = $(window).height();
+			var file_img = ''
+			var $canvas = $("#canvas");
+			$canvas.attr("width", w);
+			$canvas.attr("height", h)
+				//			 $canvas.css({
+				//				'width': w,
+				//				'height': h
+				//			})
+			var canvas = $canvas[0];
+			ctx = canvas.getContext('2d');
+			var selectimg = $('#selectimg')
+			 selectimg.change(function(evt) {
+				var files = evt.target.files;
+				for (var i = 0, f; f = files[i]; i++) {
+					if (!f.type.match('image.*')) {
+						continue;
+					}
+					var reader = new FileReader();
+					reader.onload = (function(theFile) {
+						return function(e) {
+							load_ctx_img(e.target.result, ctx)
+								//							$("#list img").attr("src", e.target.result); //预览图片的位置                 
+						};
+					})(f);
+					reader.readAsDataURL(f);
+				}
+			});
+
+			function load_ctx_img(imgsrc, ctx) {
+				var img = new Image();
+				img.src = imgsrc
+				img.onload = function() {
+					ctx.drawImage(img, 0, 0)
+					file_img = img;
+//					draw_cut_box(ctx)
+				}
+			}
+			touch.on('#canvas', 'touchstart', function(ev) {
+				ev.preventDefault();
+			});
+
+			function draw_cut_box(ctx, startx, starty) {
+				var s_x = startx - 100
+				var s_y = starty - 100
+				s_x <= 0 ? 0 : s_x;
+				s_y <= 0 ? 0 : s_y;
+				ctx.clearRect(0, 0, w, h)
+				if (file_img != '') {
+				ctx.drawImage(file_img, 0, 0);
+//				 alert(file_img)
+				}
+				ctx.save();
+				ctx.beginPath();
+				ctx.fillStyle = '#ec0764';
+				ctx.strokeStyle = '#ec0764';
+				ctx.fillRect(s_x, s_y, 200, 200); //填充颜色 x y坐标 宽 高
+				ctx.strokeRect(s_x, s_y, 200, 200);
+				ctx.fill();
+				ctx.stroke();
+				ctx.closePath();
+				ctx.restore();
+			}
+			touch.on('#canvas', 'touchmove', function(ev) {
+				var m_x = ev.pageX;
+				var m_y = ev.pageY;
+				console.log(m_y)
+				draw_cut_box(ctx, m_x, m_y)
+			})
+//			 draw_cut_box(ctx, 20, 20)
+		</script>
+
+	</body>
+
+</html>

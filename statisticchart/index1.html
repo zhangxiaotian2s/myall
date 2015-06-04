@@ -4,9 +4,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>统计图形报表</title>
+		
 	</head>
 	<link rel="stylesheet" href="index.css" />
 	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<!--模拟数据JS-->
+	<script type="text/javascript" src="team_year_jsondata.js" ></script>
+	<script type="text/javascript" src="html5canvas.js" ></script>
 
 	<body>
 		<!--
@@ -21,7 +25,7 @@
 		</canvas>
 		<script type="text/javascript" src="index2.js"></script>
 		<script type="text/javascript">
-			$.fn.Cartogram(1)
+			$.fn.Cartogram(2,'',team_year_jsondata)
 		</script>
 
 	</body>
